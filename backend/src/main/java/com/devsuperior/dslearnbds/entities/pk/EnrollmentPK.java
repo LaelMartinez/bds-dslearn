@@ -19,7 +19,7 @@ public class EnrollmentPK implements Serializable{
 	@JoinColumn(name = "user_id")
 	private User user;
 	@ManyToOne
-	@JoinColumn(name = "Offer_id")
+	@JoinColumn(name = "offer_id")
 	private Offer offer;
 	
 	public EnrollmentPK(){
