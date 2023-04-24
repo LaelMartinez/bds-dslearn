@@ -39,10 +39,9 @@ public abstract class Lesson implements Serializable{
 	           joinColumns = @JoinColumn(name = "lesson_id"), 
 	           inverseJoinColumns = {
 	        		   @JoinColumn(name = "user_id"),
-	        		   @JoinColumn(name = "ofer_id")
+	        		   @JoinColumn(name = "offer_id")
 	           } 
 	)
-	
     private Set<Enrollment> enrollmentsDone = new HashSet<>();
 	
     public Lesson() {

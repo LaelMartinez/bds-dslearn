@@ -43,3 +43,32 @@ INSERT INTO tb_enrollment ( user_id, offer_id, enroll_Moment, refund_Moment, ava
 INSERT INTO tb_enrollment ( user_id, offer_id, enroll_Moment, refund_Moment, avaliable, only_Update) VALUES (
   2, 1, TIMESTAMP WITH TIME ZONE '2020-11-20T13:00:00Z', null, true, false);	
   
+  
+INSERT INTO tb_lesson ( title, position, section_id) VALUES ('Aula 1 do capítulo 1', 1, 1 );  
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (
+                    1, 'Introdução prática para iniciantes', 'https://www.youtube.com/watch?v=_hZf1teRFNg&t=135s' );  
+
+INSERT INTO tb_lesson ( title, position, section_id) VALUES ('Aula 2 do capítulo 1', 2, 1 ); 
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (
+                    2, ' ', 'https://www.youtube.com/watch?v=_hZf1teRFNg&t=135s' );  
+
+INSERT INTO tb_lesson ( title, position, section_id) VALUES ('Aula 3 do capítulo 1', 3, 1 );  
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (
+                    3, ' ', 'https://www.youtube.com/watch?v=_hZf1teRFNg&t=135s' );  
+  
+INSERT INTO tb_lesson ( title, position, section_id) VALUES ('Tarefa do capítulo 1', 4, 1 );  
+INSERT INTO tb_task (id, description, question_Count, aproval_Count, weight, due_Date ) VALUES (
+					4, 'Tarefa do capitulo 1', 5, 4, 1.0, TIMESTAMP WITH TIME ZONE '2020-11-25T13:00:00Z' );  
+  
+INSERT INTO tb_lesson ( title, position, section_id) VALUES ('Aula 1 do capítulo 2', 1, 2 );  
+INSERT INTO tb_content (id, text_Content, video_Uri) VALUES (4, 'Conteudo 1 do capitulo 2', 'https://www.youtube.com/watch?v=_hZf1teRFNg&t=135s' );  
+
+
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1 );  
+INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1 );  
+
+  
+  
+  
+  
+  
